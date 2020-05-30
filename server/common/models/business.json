@@ -1,0 +1,55 @@
+{
+  "name": "Business",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": false
+    },
+    "food style": {
+      "type": "string",
+      "required": false
+    },
+    "price range": {
+      "type": "string",
+      "required": false
+    },
+    "menu": {
+      "type": [
+        "object"
+      ],
+      "required": false
+    },
+    "image": {
+      "type": "string",
+      "required": false
+    },
+    "url": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "reviews": {
+      "type": "hasMany",
+      "model": "Reviews",
+      "foreignKey": ""
+    },
+    "reviewers": {
+      "type": "hasMany",
+      "model": "Customer",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

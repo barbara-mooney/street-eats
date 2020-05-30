@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Tessellate by HTML5 UP\r html5up.net | @ajlkn\r Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hecano7/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hecano7/portfolio/issues"
+  },
+  "homepage": "https://github.com/Hecano7/portfolio#readme"
+}

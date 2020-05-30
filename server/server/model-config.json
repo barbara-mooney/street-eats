@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "MongoDB"
+  },
+  "AccessToken": {
+    "dataSource": "MongoDB",
+    "public": false,
+    "relations": {}
+  },
+  "ACL": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "MongoDB",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "sendgrid",
+    "public": false
+  },
+  "Customer": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Owner": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Business": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Reviews": {
+    "dataSource": "MongoDB",
+    "public": true
+  }
+}

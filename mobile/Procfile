@@ -1,0 +1,1 @@
+web: expo start

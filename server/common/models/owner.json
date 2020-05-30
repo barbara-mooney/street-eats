@@ -1,0 +1,43 @@
+{
+  "name": "Owner",
+  "plural": "Owners",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": false
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "business": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "businesses": {
+      "type": "hasMany",
+      "model": "Business",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

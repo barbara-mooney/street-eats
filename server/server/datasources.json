@@ -1,0 +1,23 @@
+{
+    "sendgrid": {
+        "connector": "loopback-connector-sendgrid",
+            "api_key": "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",
+            "from": "7hecano@gmail.com"
+        },
+    "myEmailDataSource": {
+        "connector": "mail",
+        "transports": [{
+            "type": "smtp",
+            "host": "smtp.private.com",
+            "secure": false,
+            "port": 587,
+            "tls": {
+            "rejectUnauthorized": false
+            },
+            "auth": {
+            "user": "7hecano@gmail.com",
+            "pass": "Quagmire87"
+            }
+        }]
+        }
+}

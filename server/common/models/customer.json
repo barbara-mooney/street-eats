@@ -1,0 +1,37 @@
+{
+  "name": "Customer",
+  "plural": "Customers",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": false
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "reviews": {
+      "type": "hasMany",
+      "model": "Reviews",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

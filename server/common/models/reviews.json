@@ -1,0 +1,48 @@
+{
+  "name": "Reviews",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "response text": {
+      "type": "string",
+      "required": false
+    },
+    "timeStamp": {
+      "type": "date",
+      "required": true
+    },
+    "username": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "isHidden": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "business": {
+      "type": "belongsTo",
+      "model": "Business",
+      "foreignKey": ""
+    },
+    "reviewer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
