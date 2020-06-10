@@ -175,18 +175,3 @@ Login (in Loopback Explorer) as the User you created and you will regain access.
  5. Your Detox test file can be found in the following folder ```e2e/firstTest.spec.js```
  6. The test will need to be ran using two seperate terminals. First, Run ```npm start``` or ```expo start -c``` in mobile folder to start the application in the ios simulator. 
  7. Next, open up a second terminal, and inside the mobile folder, run ```"npm run e2e"``` or ```"detox test"``` to run the detox test. This will automatically prompt the ios simulator to restart, load, and begin running your detox e2e tests for the street-eatz app.  
-
-
-
-
-
-
-
-
-
--------------------------------------------------------------------------------------
-NOTE ON MAP ICONS
-If this app is pushed to production, please make sure that a custom icon is used on maps. If the present icon is used ("food-truck.png"), attribute must be given to icon author (Good Ware). See https://www.flaticon.com/free-icon/food-truck_2676380?term=food%20truck&page=1&position=35 for instructions on giving attribute.
--------------------------------------------------------------------------------------
-NOTE ON SHARE FEATURE
-Once app is pushed into production. Please add a link to the app download page in the share button message (./mobile/ShareFeature).
