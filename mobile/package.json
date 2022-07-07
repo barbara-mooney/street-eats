@@ -38,7 +38,7 @@
     "fs": "0.0.1-security",
     "loopback-connector-sendgrid": "^2.2.4",
     "mocha": "^7.1.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
