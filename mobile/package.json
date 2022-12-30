@@ -37,7 +37,7 @@
     "expo-task-manager": "^8.0.0",
     "fs": "0.0.1-security",
     "loopback-connector-sendgrid": "^2.2.4",
-    "mocha": "^7.1.2",
+    "mocha": "^10.2.0",
     "moment": "^2.24.0",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
@@ -62,7 +62,7 @@
     "detox": "^16.4.0",
     "detox-expo-helpers": "^0.6.0",
     "expect": "^26.0.1",
-    "mocha": "^7.1.2"
+    "mocha": "^10.2.0"
   },
   "private": true
 }
